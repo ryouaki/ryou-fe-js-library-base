@@ -1,3 +1,3 @@
-import { echoHello } from './src/index'
+import { EchoHello } from './src/index';
 
-echoHello()
+document.body.innerText = EchoHello.sayHello('world');
