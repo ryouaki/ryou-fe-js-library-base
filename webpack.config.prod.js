@@ -5,7 +5,7 @@ module.exports = {
     test: './src/index.js'
   },
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'lib'),
     filename: '[name].js',
     libraryTarget: 'umd',
     library: '[name]'
