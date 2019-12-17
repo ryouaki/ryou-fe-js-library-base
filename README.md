@@ -1,10 +1,10 @@
 # ryou-fe-js-library-base
-A pure JS Library template
+A pure JS Library template，让开发js npm包更简单
 
 ## FE JS library 基础模板
 
 1. JS npm包基础框架模板及代码
-2. webpack打包功能
+2. webpack打包功能，精简，只打入需要的代码
 3. eslint检测，集成standard和airbnb
 4. 集成jest
 5. 集成jsdoc
