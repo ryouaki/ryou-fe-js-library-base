@@ -1,11 +1,20 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
   entry: './index.js',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'index.js'
+  },
+  externals: {
+    jquery: 'jQuery'
+  },
+  resolve:{
+    alias:{
+      '@': './alias'
+    }
   },
   module: {
     rules: [
@@ -34,6 +43,9 @@ module.exports = {
       filename: 'index.html',
       template: 'index.html',
       inject: true
+    }),
+    new webpack.LoaderOptionsPlugin({
+      debug: true
     })
   ]
 };

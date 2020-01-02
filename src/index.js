@@ -1,4 +1,7 @@
 /** @module ryou-cli/Demo */
+import _ from 'lodash';
+import { test } from './test';
+import { helloWorld } from '@/conl';
 
 /**
  * Say Hello function.
@@ -6,6 +9,9 @@
  * @return {string} The hello string.
  */
 export function echoHello(name) {
+  _.toUpper(name);
+  test();
+  helloWorld();
   return `Hello ${name}`;
 }
 
